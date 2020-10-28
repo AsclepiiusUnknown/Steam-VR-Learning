@@ -28,6 +28,9 @@ public class VrRig : MonoBehaviour
             Destroy(gameObject);
             return;
         }
+
+        leftController.Setup();
+        rightController.Setup();
     }
 
     // Start is called before the first frame update

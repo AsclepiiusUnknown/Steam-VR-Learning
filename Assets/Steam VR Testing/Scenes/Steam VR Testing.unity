@@ -150,7 +150,7 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
+  serializedVersion: 3
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
@@ -307,6 +307,49 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1 &1538060928
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1538060930}
+  - component: {fileID: 1538060929}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1538060929
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1538060928}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7b1ebaba56b63a40af01375a0dcb8cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1538060930
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1538060928}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &5167685372348766361
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -314,6 +357,61 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 636919727392425497, guid: 25294561e74bfdb4794db5bd751effd1,
+        type: 3}
+      propertyPath: onGrabPressed.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 636919727392425497, guid: 25294561e74bfdb4794db5bd751effd1,
+        type: 3}
+      propertyPath: onGrabPressed.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 636919727392425497, guid: 25294561e74bfdb4794db5bd751effd1,
+        type: 3}
+      propertyPath: onGrabPressed.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 636919727392425497, guid: 25294561e74bfdb4794db5bd751effd1,
+        type: 3}
+      propertyPath: onGrabPressed.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1538060929}
+    - target: {fileID: 636919727392425497, guid: 25294561e74bfdb4794db5bd751effd1,
+        type: 3}
+      propertyPath: onGrabPressed.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnGrabPressed
+      objectReference: {fileID: 0}
+    - target: {fileID: 636919727392425497, guid: 25294561e74bfdb4794db5bd751effd1,
+        type: 3}
+      propertyPath: onGrabPressed.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 636919727392425497, guid: 25294561e74bfdb4794db5bd751effd1,
+        type: 3}
+      propertyPath: grab.actionPath
+      value: /actions/default/in/Grab
+      objectReference: {fileID: 0}
+    - target: {fileID: 636919727392425497, guid: 25294561e74bfdb4794db5bd751effd1,
+        type: 3}
+      propertyPath: pointer.actionPath
+      value: /actions/default/in/Pointer
+      objectReference: {fileID: 0}
+    - target: {fileID: 636919727392425497, guid: 25294561e74bfdb4794db5bd751effd1,
+        type: 3}
+      propertyPath: use.actionPath
+      value: /actions/default/in/Use
+      objectReference: {fileID: 0}
+    - target: {fileID: 636919727392425497, guid: 25294561e74bfdb4794db5bd751effd1,
+        type: 3}
+      propertyPath: teleport.actionPath
+      value: /actions/default/in/Teleport
+      objectReference: {fileID: 0}
+    - target: {fileID: 636919727392425497, guid: 25294561e74bfdb4794db5bd751effd1,
+        type: 3}
+      propertyPath: touchpadAxis.actionPath
+      value: /actions/default/in/TouchpadAxis
+      objectReference: {fileID: 0}
     - target: {fileID: 5167685372136858018, guid: 25294561e74bfdb4794db5bd751effd1,
         type: 3}
       propertyPath: m_Name
@@ -373,6 +471,61 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7598725286808242584, guid: 25294561e74bfdb4794db5bd751effd1,
+        type: 3}
+      propertyPath: onGrabPressed.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7598725286808242584, guid: 25294561e74bfdb4794db5bd751effd1,
+        type: 3}
+      propertyPath: onGrabPressed.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7598725286808242584, guid: 25294561e74bfdb4794db5bd751effd1,
+        type: 3}
+      propertyPath: onGrabPressed.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7598725286808242584, guid: 25294561e74bfdb4794db5bd751effd1,
+        type: 3}
+      propertyPath: onGrabPressed.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1538060929}
+    - target: {fileID: 7598725286808242584, guid: 25294561e74bfdb4794db5bd751effd1,
+        type: 3}
+      propertyPath: onGrabPressed.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnGrabPressed
+      objectReference: {fileID: 0}
+    - target: {fileID: 7598725286808242584, guid: 25294561e74bfdb4794db5bd751effd1,
+        type: 3}
+      propertyPath: onGrabPressed.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 7598725286808242584, guid: 25294561e74bfdb4794db5bd751effd1,
+        type: 3}
+      propertyPath: grab.actionPath
+      value: /actions/default/in/Grab
+      objectReference: {fileID: 0}
+    - target: {fileID: 7598725286808242584, guid: 25294561e74bfdb4794db5bd751effd1,
+        type: 3}
+      propertyPath: pointer.actionPath
+      value: /actions/default/in/Pointer
+      objectReference: {fileID: 0}
+    - target: {fileID: 7598725286808242584, guid: 25294561e74bfdb4794db5bd751effd1,
+        type: 3}
+      propertyPath: use.actionPath
+      value: /actions/default/in/Use
+      objectReference: {fileID: 0}
+    - target: {fileID: 7598725286808242584, guid: 25294561e74bfdb4794db5bd751effd1,
+        type: 3}
+      propertyPath: teleport.actionPath
+      value: /actions/default/in/Teleport
+      objectReference: {fileID: 0}
+    - target: {fileID: 7598725286808242584, guid: 25294561e74bfdb4794db5bd751effd1,
+        type: 3}
+      propertyPath: touchpadAxis.actionPath
+      value: /actions/default/in/TouchpadAxis
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 25294561e74bfdb4794db5bd751effd1, type: 3}

@@ -9,6 +9,8 @@ public class VrControllerInput : MonoBehaviour
     [System.Serializable]
     public class InputEvent : UnityEvent<InputEventArgs> { };
 
+    public VrController Controller { get { return controller; } }
+
     public SteamVR_Action_Boolean grab;
     public SteamVR_Action_Boolean pointer;
     public SteamVR_Action_Boolean use;

@@ -20,7 +20,7 @@ public class InteractableObject : MonoBehaviour
 
     public Transform attachPoint;
 
-    [space]
+    [Space]
 
     public InteractionEvent onGrabbed = new InteractionEvent();
     public InteractionEvent onReleased = new InteractionEvent();

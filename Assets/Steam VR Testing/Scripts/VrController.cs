@@ -7,6 +7,8 @@ using Valve.VR;
 [RequireComponent(typeof(Rigidbody))]
 public class VrController : MonoBehaviour
 {
+    public VrControllerInput Input { get { return input; } }
+
     public Vector3 Velocity { get { return pose.GetVelocity(); } }
     public Vector3 AngularVelocity { get { return pose.GetAngularVelocity(); } }
 
